@@ -12,7 +12,7 @@ Source0:	http://eyed3.nicfit.net/releases/%{module}-%{version}.tar.gz
 # Source0-md5:	dfa1b3c379b86c59ed10b6073514e33b
 URL:		http://eyed3.nicfit.net/
 %pyrequires_eq	python-modules
-BuildRequires:	python-devel >= 2.3
+BuildRequires:	python-devel >= 1:2.3
 BuildRequires:	rpm-pythonprov
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
