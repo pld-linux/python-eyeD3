@@ -18,14 +18,14 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 eyeD3 is a Python module and program for processing ID3 tags.
-Information about mp3 files (i.e bit rate, sample frequency, play
+Information about MP3 files (i.e bit rate, sample frequency, play
 time, etc.) is also provided. The formats supported are ID3 v1.0/v1.1
 and v2.3/v2.4.
 
 %description -l pl
 eyeD3 to modu³ jêzyka Python oraz wykorzystuj±cy go program,
 przetwarzaj±ce znaczniki ID3. Dostarczana jest tak¿e informacja o
-samych plikach mp3 (d³ugo¶æ, czêstotliwo¶æ próbkowania itp.)
+samych plikach MP3 (d³ugo¶æ, czêstotliwo¶æ próbkowania itp.).
 Obs³ugiwane s± znaczniki ID3 w wersjach v1.0/v1.1 i v2.3/v2.4.
 
 %prep
