@@ -2,7 +2,7 @@
 %define		module	eyeD3
 
 Summary:	Module for manipulating ID3 informational tags on MP3 audio files
-Summary(pl):	Modu³ s³u¿±cy do manipulacji znacznikami ID3 plików MP3
+Summary(pl.UTF-8):   ModuÅ‚ sÅ‚uÅ¼Ä…cy do manipulacji znacznikami ID3 plikÃ³w MP3
 Name:		python-%{module}
 Version:	0.6.11
 Release:	1
@@ -21,11 +21,11 @@ Information about MP3 files (i.e bit rate, sample frequency, play
 time, etc.) is also provided. The formats supported are ID3 v1.0/v1.1
 and v2.3/v2.4.
 
-%description -l pl
-eyeD3 to modu³ jêzyka Python oraz wykorzystuj±cy go program,
-przetwarzaj±cy znaczniki ID3. Dostarczana jest tak¿e informacja o
-samych plikach MP3 (d³ugo¶æ, czêstotliwo¶æ próbkowania itp.).
-Obs³ugiwane s± znaczniki ID3 w wersjach v1.0/v1.1 i v2.3/v2.4.
+%description -l pl.UTF-8
+eyeD3 to moduÅ‚ jÄ™zyka Python oraz wykorzystujÄ…cy go program,
+przetwarzajÄ…cy znaczniki ID3. Dostarczana jest takÅ¼e informacja o
+samych plikach MP3 (dÅ‚ugoÅ›Ä‡, czÄ™stotliwoÅ›Ä‡ prÃ³bkowania itp.).
+ObsÅ‚ugiwane sÄ… znaczniki ID3 w wersjach v1.0/v1.1 i v2.3/v2.4.
 
 %prep
 %setup -q -n %{module}-%{version}
