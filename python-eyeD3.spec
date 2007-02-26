@@ -1,15 +1,13 @@
-
 %define		module	eyeD3
-
 Summary:	Module for manipulating ID3 informational tags on MP3 audio files
 Summary(pl.UTF-8):	Moduł służący do manipulacji znacznikami ID3 plików MP3
 Name:		python-%{module}
-Version:	0.6.11
+Version:	0.6.12
 Release:	1
 License:	GNU
 Group:		Development/Languages/Python
 Source0:	http://eyed3.nicfit.net/releases/%{module}-%{version}.tar.gz
-# Source0-md5:	e296d7b896a31abf429d542dd26c90a3
+# Source0-md5:	8e90bd777a8c6d9302f29c6914751f5f
 URL:		http://eyed3.nicfit.net/
 %pyrequires_eq	python-modules
 BuildRequires:	python-devel >= 1:2.3
@@ -45,14 +43,15 @@ python setup.py install \
 	--root=$RPM_BUILD_ROOT
 
 rm -f $RPM_BUILD_ROOT%{py_sitescriptdir}/%{module}/*.py
+rm -rf $RPM_BUILD_ROOT%{_docdir}/%{module}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc AUTHORS ChangeLog README.html NEWS THANKS TODO
 %attr(755,root,root) %{_bindir}/%{module}
-%doc README.html AUTHORS THANKS ChangeLog
 %dir %{py_sitescriptdir}/%{module}
 %{py_sitescriptdir}/%{module}/*.py[co]
 %{_mandir}/man1/%{module}.1*
