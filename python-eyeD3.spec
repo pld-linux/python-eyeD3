@@ -2,12 +2,12 @@
 Summary:	Module for manipulating ID3 informational tags on MP3 audio files
 Summary(pl.UTF-8):	Moduł służący do manipulacji znacznikami ID3 plików MP3
 Name:		python-%{module}
-Version:	0.6.17
-Release:	3
+Version:	0.6.18
+Release:	1
 License:	GNU
 Group:		Development/Languages/Python
 Source0:	http://eyed3.nicfit.net/releases/%{module}-%{version}.tar.gz
-# Source0-md5:	7bc175d0eb1e0152753b2aca80df6fde
+# Source0-md5:	ad545c55bb8bdd579e8d14c5bdaacee5
 URL:		http://eyed3.nicfit.net/
 %pyrequires_eq	python-modules
 BuildRequires:	python-devel >= 1:2.3
@@ -52,7 +52,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog README.html NEWS THANKS TODO
+%doc AUTHORS ChangeLog README.html NEWS TODO
 %attr(755,root,root) %{_bindir}/%{module}
 %dir %{py_sitescriptdir}/%{module}
 %{py_sitescriptdir}/%{module}/*.py[co]
