@@ -40,9 +40,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-python setup.py install \
-	--optimize=2 \
-	--root=$RPM_BUILD_ROOT
+%py_install
 
 rm -f $RPM_BUILD_ROOT%{py_sitescriptdir}/%{module}/*.py
 rm -rf $RPM_BUILD_ROOT%{_docdir}/%{module}-%{version}
