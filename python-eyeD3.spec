@@ -9,6 +9,7 @@ Group:		Development/Languages/Python
 Source0:	http://eyed3.nicfit.net/releases/%{module}-%{version}.tar.gz
 # Source0-md5:	ad545c55bb8bdd579e8d14c5bdaacee5
 URL:		http://eyed3.nicfit.net/
+BuildRequires:	rpmbuild(macros) >= 1.710
 %pyrequires_eq	python-modules
 BuildRequires:	python-devel >= 1:2.3
 BuildRequires:	python-modules
