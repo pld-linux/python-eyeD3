@@ -70,6 +70,7 @@ Obsługiwane są znaczniki ID3 w wersjach v1.0/v1.1 i v2.3/v2.4.
 Summary:	Python 3 module for manipulating ID3 informational tags on MP3 audio files
 Summary(pl.UTF-8):	Moduł Pythona 3 służący do operacji na znacznikach ID3 plików MP3
 Group:		Development/Languages/Python
+Requires:	python3-grako
 Requires:	python3-modules >= 1:3.3
 Requires:	python3-six >= 1.10.0
 
