@@ -1,3 +1,5 @@
+# TODO
+# -	python2 requires pathlib
 #
 # Conditional build:
 %bcond_without	doc	# Sphinx HTML documentation
