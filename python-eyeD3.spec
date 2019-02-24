@@ -12,11 +12,12 @@ Summary:	Python 2 module for manipulating ID3 informational tags on MP3 audio fi
 Summary(pl.UTF-8):	Moduł Pythona 2 służący do operacji na znacznikach ID3 plików MP3
 Name:		python-%{module}
 Version:	0.8
-Release:	2
+Release:	3
 License:	GPL v3
 Group:		Development/Languages/Python
 Source0:	http://eyed3.nicfit.net/releases/%{module}-%{version}.tar.gz
 # Source0-md5:	840626686e6b1bc6afca9eab99a0873a
+Patch0:		%{name}-pyc.patch
 URL:		http://eyed3.nicfit.net/
 %if %{with tests} && %(locale -a | grep -q '^C\.UTF-8$'; echo $?)
 BuildRequires:	glibc-localedb-all
@@ -101,6 +102,7 @@ Dokumentacja API modułu Pythona eyeD3.
 
 %prep
 %setup -q -n %{module}-%{version}
+%patch0 -p1
 
 %build
 export LC_ALL=C.UTF-8
